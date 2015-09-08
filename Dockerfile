@@ -1,4 +1,4 @@
-FROM dockerfile/nodejs
+FROM node
 
 ENV BUCKY_VERSION 0.4.1
 
