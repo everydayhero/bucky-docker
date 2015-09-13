@@ -10,9 +10,9 @@ RUN cd /opt/BuckyServer && npm install
 
 ADD default.yaml.template /opt/BuckyServer/config/default.yaml.template
 
-ADD run.sh /opt/BuckyServer/run.sh
-RUN chmod +x /opt/BuckyServer/run.sh
+ADD serve /opt/BuckyServer/serve
+RUN chmod +x /opt/BuckyServer/serve
 
 WORKDIR /opt/BuckyServer
 
-CMD ["./run.sh"]
+CMD ["./serve"]
