@@ -1,9 +1,9 @@
 server:
-  port: 8127
-  appRoot: "/"
+  port: {{PORT}}
+  appRoot: ""
 
 statsd:
-  host: {{STATSD_HOST}}
+  host: "{{STATSD_HOST}}"
   port: {{STATSD_PORT}}
 
 modules:
@@ -15,4 +15,5 @@ modules:
     - ./modules/collectors
 
   collectors:
+    - ./modules/collectionLogger
     - ./modules/statsd

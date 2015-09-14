@@ -1,6 +1,8 @@
 FROM node
 
 ENV BUCKY_VERSION 0.4.1
+ENV PORT=8127
+EXPOSE 8127
 
 RUN wget https://github.com/HubSpot/BuckyServer/archive/v$BUCKY_VERSION.tar.gz -O /opt/BuckyServer.tar.gz && \
     mkdir -p /opt/BuckyServer && \
